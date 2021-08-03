@@ -1,0 +1,14 @@
+{
+  "name": "patrickf1bot",
+  "version": "1.0.0",
+  "description": "Dieser Bot ist für den Discord Server von patrickf1gaming",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "HackerLoad",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.3"
+  }
+}
