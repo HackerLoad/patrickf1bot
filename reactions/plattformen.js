@@ -1,5 +1,5 @@
 module.exports = {
-    name: 'colors',
+    name: 'plattformen',
     descrtiption: "Erstellt ein Embed um die Plattform des Nutzers anzugeben.",
     async execute(message, args, Discord, client) {
         if(message.member.permissions.has("ADMINISTRATOR")) {
@@ -20,7 +20,7 @@ module.exports = {
             .addFields(
                 { name: 'PC', value: 'Wenn du mit ⚪ reagierst wird dir die PC Rolle gegeben.' },
                 { name: 'Playstation', value: 'Wenn du mit 🔵 reagierst wird dir die Playstation Rolle gegeben.'},
-                { name: 'XBOX', value: 'Wenn du mit 🟢 reagierst wird dir die XBOX Rolle gegeben.'},
+                { name: 'XBOX', value: 'Wenn du mit 🟢 reagierst wird dir die XBOX Rolle gegeben.'}
             )
             .setFooter('©HackerLoad', 'https://imgur.com/i0GTz5e.png');
 
