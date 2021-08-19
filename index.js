@@ -67,6 +67,8 @@ client.on('message', message => {
         client.commands.get('benachrichtigungen').execute(message, args, Discord, client);
     } else if(command === 'regeln') {                       //Regeln
         client.commands.get('regeln').execute(message, args, Discord, client);
+    } else if(command === 'plattformen') {                  //Plattformen
+        client.commands.get('plattformen').execute(message, args, Discord, client);
     } else if(command === 'youtube') {                      //YouTube
         client.commands.get('youtube').execute(message, args);
     } else if(command === 'twitch') {                       //Twitch
