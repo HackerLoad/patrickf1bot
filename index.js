@@ -36,6 +36,31 @@ client.on('guildMemberRemove', guildMember => {
     guildMember.guild.channels.cache.get('866233071584673803').send(`<@${guildMember.user.id}> hat uns leider Verlassen! Wir werden ihn vermissen.`);
 });
 
+client.on('messageDelete', message => {
+    const LogChannel = client.channels.cache.get('879101530647715980')
+    const DeletedLog = new Discord.MessageEmbed()
+    .setTitle("Nachricht Gelöscht")
+    .addField('Gelöscht von', `${message.author} - (${message.author.id})`)
+    .addField("In", message.channel)
+    .addField('Nachricht:', message.content)
+    .setColor('#e42643')
+    .setThumbnail(message.author.displayAvatarURL({dynamic: true}))
+    LogChannel.send(DeletedLog)
+});
+
+client.on('messageUpdate', async(oldMessage, newMessage) => {
+    const LogChannel = client.channels.cache.get('879101530647715980')
+    const EditedLog = new Discord.MessageEmbed()
+    .setTitle("Nachricht bearbeitet")
+    .addField('Bearbeitet von:', `${oldMessage.author} - (${oldMessage.author.id})`)
+    .addField("In", oldMessage.channel)
+    .addField("Alte Nachricht:", oldMessage.content)
+    .addField("Neue Nachricht:", newMessage.content)
+    .setColor('#e42643')
+    .setThumbnail(oldMessage.author.displayAvatarURL({dynamic: true}))
+    LogChannel.send(EditedLog)
+});
+
 client.once('ready', () => {
     console.log('patrickf1bot ist nun bereit!');
     client.user.setActivity(status[0] , {type: "PLAYING"});
