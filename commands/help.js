@@ -12,13 +12,12 @@ module.exports = {
         .setDescription('Hier sind die Commands vom patrickf1bot')
         .setThumbnail('https://i.imgur.com/lIhUgVv.png')
         .addFields(
-            { name: '!commands', value: 'Zeigt alle Commands.' },
             { name: '!youtube', value: 'Schickt einen Link zum YouTube-Kanal von Patrick.' },
             { name: '!twitch', value: 'Schickt einen Link zum Twitch-Kanal von Patrick.' },
             { name: '!instagram', value: 'Schickt einen Link zum Instagram Profil von Patrick.' },
             { name: '!twitter', value: 'Schickt einen Link zum Twitter von Patrick.' },
             { name: '!lenkrad', value: 'Schickt den Namen und einen Link zum Lenkrad das Patrick zurzeit nutzt.' },
-            { name: '!wheels', value: 'Zeigt alle Wheels die Patrick empfiehlt/besitzt hatte.' },
+            { name: '!wheels', value: 'Zeigt alle Lenkräder die Patrick empfiehlt/benutzt hatte.' },
             { name: '!discord', value: 'Schickt einen Einladungslink zum Discord!' }
         )
         .setFooter('Das Serverteam', 'https://i.imgur.com/lIhUgVv.png');

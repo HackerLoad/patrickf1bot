@@ -94,12 +94,16 @@ client.on('message', message => {
         client.commands.get('regeln').execute(message, args, Discord, client);
     } else if(command === 'plattformen') {                  //Plattformen
         client.commands.get('plattformen').execute(message, args, Discord, client);
-    } else if(command === 'youtube') {                      //YouTube
+    } else if(command === 'wheels') {
+        client.commands.get('wheels').execute(message, args, Discord, client);
+    }else if(command === 'youtube') {                      //YouTube
         client.commands.get('youtube').execute(message, args);
-    } else if(command === 'twitch') {                       //Twitch
-        client.command.get('twitch').execute(message, args);
-    } else if(command === 'instagram') {                    //Instagram
-        client.command.get('instagram').execute(messagem, args);
+    }else if(command === 'twitch') {                      //YouTube
+        client.commands.get('twitch').execute(message, args);
+    }else if(command === 'instagram') {                      //YouTube
+        client.commands.get('instagram').execute(message, args);
+    }else if(command === 'lenkrad') {                      //YouTube
+        client.commands.get('lenkrad').execute(message, args);
     }
 });
 
