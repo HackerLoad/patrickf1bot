@@ -94,15 +94,19 @@ client.on('message', message => {
         client.commands.get('regeln').execute(message, args, Discord, client);
     } else if(command === 'plattformen') {                  //Plattformen
         client.commands.get('plattformen').execute(message, args, Discord, client);
-    } else if(command === 'wheels') {
+    } else if(command === 'ligarennen') {                   //Ligarennen
+        client.commands.get('ligarennen').execute(message, args, Discord, client);
+    } else if (command === 'follower') {
+        client.commands.get('follower').execute(message, args, Discord, client);
+    }else if(command === 'wheels') {                       //Wheels
         client.commands.get('wheels').execute(message, args, Discord, client);
     }else if(command === 'youtube') {                      //YouTube
         client.commands.get('youtube').execute(message, args);
-    }else if(command === 'twitch') {                      //YouTube
+    }else if(command === 'twitch') {                      //Twitch
         client.commands.get('twitch').execute(message, args);
-    }else if(command === 'instagram') {                      //YouTube
+    }else if(command === 'instagram') {                      //Instagram
         client.commands.get('instagram').execute(message, args);
-    }else if(command === 'lenkrad') {                      //YouTube
+    }else if(command === 'lenkrad') {                      //Lenkrad
         client.commands.get('lenkrad').execute(message, args);
     }
 });
