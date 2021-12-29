@@ -111,4 +111,4 @@ client.on('message', message => {
     }
 });
 
-client.login('ODE5NDcxNTkzNzA0MjU5NjE0.YEnGZA.k8nCxEZnH2_He8XvA4UejA6i5VM');
+client.login('ODE5NDcxNTkzNzA0MjU5NjE0.YEnGZA.cRhYDDl5Mk3F4nCZLk1zUZ79kJw');
