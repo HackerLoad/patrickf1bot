@@ -28,6 +28,12 @@ for(const file of sozialFiles) {
     client.commands.set(command.name, command);
 }
 
+const ticketFiles = fs.readdirSync('./ticket/').filter(file => file.endsWith('.js'));
+for(const file of ticketFiles) {
+    const command = require(`./ticket/${file}`);
+    client.commands.set(command.name, command);
+}
+
 client.on('guildMemberAdd', guildMember => {
     guildMember.guild.channels.cache.get('866233071584673803').send(`<@${guildMember.user.id}> ist uns gerade beigetreten! Sagt alle hallo!`);
 });
@@ -41,8 +47,8 @@ client.on('messageDelete', message => {
     const DeletedLog = new Discord.MessageEmbed()
     .setTitle("Nachricht Gelöscht")
     .addField('Gelöscht von', `${message.author} - (${message.author.id})`)
-    .addField("In", message.channel)
-    .addField('Nachricht:', message.content)
+    .addField("In", `message.channel`)
+    .addField('Nachricht:', `message.content`)
     .setColor('#e42643')
     .setThumbnail(message.author.displayAvatarURL({dynamic: true}))
     LogChannel.send(DeletedLog)
@@ -53,9 +59,9 @@ client.on('messageUpdate', async(oldMessage, newMessage) => {
     const EditedLog = new Discord.MessageEmbed()
     .setTitle("Nachricht bearbeitet")
     .addField('Bearbeitet von:', `${oldMessage.author} - (${oldMessage.author.id})`)
-    .addField("In", oldMessage.channel)
-    .addField("Alte Nachricht:", oldMessage.content)
-    .addField("Neue Nachricht:", newMessage.content)
+    .addField("In", `oldMessage.channel`)
+    .addField("Alte Nachricht:", `oldMessage.content`)
+    .addField("Neue Nachricht:", `newMessage.content`)
     .setColor('#e42643')
     .setThumbnail(oldMessage.author.displayAvatarURL({dynamic: true}))
     LogChannel.send(EditedLog)
@@ -100,6 +106,10 @@ client.on('message', message => {
         client.commands.get('follower').execute(message, args, Discord, client);
     }else if(command === 'wheels') {                       //Wheels
         client.commands.get('wheels').execute(message, args, Discord, client);
+    }else if(command === 'spiele') {                       //Spiele
+        client.commands.get('spiele').execute(message, args, Discord, client);
+    }else if(command === 'ticket') {                       //Ticket
+        client.commands.get('ticket').execute(message, args, Discord, client);
     }else if(command === 'youtube') {                      //YouTube
         client.commands.get('youtube').execute(message, args);
     }else if(command === 'twitch') {                      //Twitch
@@ -111,4 +121,4 @@ client.on('message', message => {
     }
 });
 
-client.login('ODE5NDcxNTkzNzA0MjU5NjE0.YEnGZA.uC5IRTrFnCzzlTnPvO3e7Ffj794');
+client.login('ODE5NDcxNTkzNzA0MjU5NjE0.YEnGZA.tiSJVtUpeut7gq89bxxfMvtXqrg');
