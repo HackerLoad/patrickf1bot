@@ -3,7 +3,7 @@ module.exports = {
     description: "Sendet ein Embed wo man einen Discord Einladungslink zum patrickf1gaming Community Server findet.",
     async execute(message, args, Discord, client) {
 
-        const channel = '931862532455555182';
+        const channel = '931878881445687326';
 
         let embed = new Discord.MessageEmbed()
         .setColor('#0388fc')

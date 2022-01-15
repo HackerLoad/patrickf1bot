@@ -2,10 +2,10 @@ module.exports = {
     name: 'regeln',
     description: "Sendet ein Embed wo die Regeln vermerkt sind",
     async execute(message, args, Discord, client) {
-        if(message.member.permissions.has("BAN_MEMBERS")){
+        if(message.member.permissions.has("ADMINISTRATOR")){
 
-        const channel = '866269242444480562';
-        const ruleAccepted = message.guild.roles.cache.find(role => role.name === "Member");
+        const channel = '807282259547127829';
+        const ruleAccepted = message.guild.roles.cache.find(role => role.name === "Mitglied");
 
         const ruleAcceptedEmoji = '✅';
 

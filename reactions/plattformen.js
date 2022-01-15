@@ -3,7 +3,7 @@ module.exports = {
     descrtiption: "Erstellt ein Embed um die Plattform des Nutzers anzugeben.",
     async execute(message, args, Discord, client) {
         if(message.member.permissions.has("ADMINISTRATOR")) {
-            const channel = '877747408740691998';
+            const channel = '807308073907257375';
             const teampc = message.guild.roles.cache.find(role => role.name === "PC");
             const teamps = message.guild.roles.cache.find(role => role.name === "PlayStation");
             const teamxbox = message.guild.roles.cache.find(role => role.name === "XBOX");

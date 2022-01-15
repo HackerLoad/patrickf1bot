@@ -4,7 +4,7 @@ module.exports = {
 
     async execute(message, args, Discord, client) {
         if(message.member.permissions.has("ADMINISTRATOR")) {
-            const channel = '898626561949970493';
+            const channel = '807308073907257375';
             const follower = message.guild.roles.cache.find(role => role.name === "Follower");
 
             const followerem = '🟣';

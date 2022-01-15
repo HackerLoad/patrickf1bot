@@ -35,15 +35,15 @@ for(const file of ticketFiles) {
 }
 
 client.on('guildMemberAdd', guildMember => {
-    guildMember.guild.channels.cache.get('866233071584673803').send(`<@${guildMember.user.id}> ist uns gerade beigetreten!`);
+    guildMember.guild.channels.cache.get('807279895323082752').send(`<@${guildMember.user.id}> ist uns gerade beigetreten!`);
 });
 
 client.on('guildMemberRemove', guildMember => {
-    guildMember.guild.channels.cache.get('866233071584673803').send(`<@${guildMember.user.id}> hat uns leider Verlassen!`);
+    guildMember.guild.channels.cache.get('807279895323082752').send(`<@${guildMember.user.id}> hat uns leider Verlassen!`);
 });
 
 client.on('messageDelete', message => {
-    const LogChannel = client.channels.cache.get('879101530647715980')
+    const LogChannel = client.channels.cache.get('807268994829647924')
     const DeletedLog = new Discord.MessageEmbed()
     .setTitle("Nachricht Gelöscht")
     .addField('Gelöscht von', `${message.author} - (${message.author.id})`)
@@ -55,7 +55,7 @@ client.on('messageDelete', message => {
 });
 
 client.on('messageUpdate', async(oldMessage, newMessage) => {
-    const LogChannel = client.channels.cache.get('879101530647715980')
+    const LogChannel = client.channels.cache.get('807268994829647924')
     const EditedLog = new Discord.MessageEmbed()
     .setTitle("Nachricht bearbeitet")
     .addField('Bearbeitet von:', `${oldMessage.author} - (${oldMessage.author.id})`)

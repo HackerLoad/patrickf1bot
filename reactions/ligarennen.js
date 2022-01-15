@@ -4,7 +4,7 @@ module.exports = {
 
     async execute(message, args, Discord, client) {
         if(message.member.permissions.has("ADMINISTRATOR")) {
-            const channel = '891049549781696532';
+            const channel = '807308073907257375';
             const ligarn = message.guild.roles.cache.find(role => role.name === "Ligarennen");
 
             const ligarnem = '🔴';

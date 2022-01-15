@@ -4,7 +4,7 @@ module.exports = {
 
     async execute(message, args, Discord, client) {
         if(message.member.permissions.has("ADMINISTRATOR")) {
-            const channel = '925849802284085249';
+            const channel = '807308073907257375';
             const ytnotif = message.guild.roles.cache.find(role => role.name === "F1");
             const twnotif = message.guild.roles.cache.find(role => role.name === "AssettoCorsa");
             const twtnotif = message.guild.roles.cache.find(role => role.name === "IRacing");

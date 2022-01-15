@@ -3,15 +3,15 @@ module.exports = {
     descrtiption: "Erstellt ein Embed um die Farbe vom Namen zu wechseln.",
     async execute(message, args, Discord, client) {
         if(message.member.permissions.has("ADMINISTRATOR")) {
-            const channel = '866260096596836372';
-            const colorBlue = message.guild.roles.cache.find(role => role.name === "Blau");
-            const colorCyan = message.guild.roles.cache.find(role => role.name === "Türkis");
-            const colorGreen = message.guild.roles.cache.find(role => role.name === "Grün");
+            const channel = '807308073907257375';
+            const colorBlue = message.guild.roles.cache.find(role => role.name === "Blue");
+            const colorCyan = message.guild.roles.cache.find(role => role.name === "Cyan");
+            const colorGreen = message.guild.roles.cache.find(role => role.name === "Green");
             const colorPink = message.guild.roles.cache.find(role => role.name === "Pink");
-            const colorPurple = message.guild.roles.cache.find(role => role.name === "Lila");
-            const colorRed = message.guild.roles.cache.find(role => role.name === "Rot");
-            const colorWhite = message.guild.roles.cache.find(role => role.name === "Weiß");
-            const colorYellow = message.guild.roles.cache.find(role => role.name === "Gelb");
+            const colorPurple = message.guild.roles.cache.find(role => role.name === "Purple");
+            const colorRed = message.guild.roles.cache.find(role => role.name === "Red");
+            const colorWhite = message.guild.roles.cache.find(role => role.name === "White");
+            const colorYellow = message.guild.roles.cache.find(role => role.name === "Yellow");
 
             const colorBlueEmoji = '🔵';
             const colorCyanEmoji = '🟦';
@@ -35,7 +35,7 @@ module.exports = {
                 { name: 'Lila', value: 'Wenn du mit 🟪 reagierst wird dein Name die Farbe lila bekommen!'},
                 { name: 'Rot', value: 'Wenn du mit 🔴 reagierst wird dein Name die Farbe rot bekommen!'},
                 { name: 'Weiß', value: 'Wenn du mit ⚪ reagierst wird dein Name die Farbe weiß bekommen!'},
-                { name: 'Gelb', value: 'Wenn du mit 🟡 reagierst wird dein Name die Farbe yellow bekommen!'}
+                { name: 'Gelb', value: 'Wenn du mit 🟡 reagierst wird dein Name die Farbe gelb bekommen!'}
             )
             .setFooter('©HackerLoad', 'https://imgur.com/i0GTz5e.png');
 

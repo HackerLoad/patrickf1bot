@@ -3,7 +3,7 @@ module.exports = {
     description: "Zeigt die Commands des Bots!",
     async execute(message, args, Discord, client) {
 
-        const channel = '866235676647096370';
+        const channel = '931878207081295902';
 
         let embed = new Discord.MessageEmbed()
         .setColor('#e42643')

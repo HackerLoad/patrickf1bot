@@ -4,14 +4,12 @@ module.exports = {
 
     async execute(message, args, Discord, client) {
         if(message.member.permissions.has("ADMINISTRATOR")) {
-            const channel = '866264470308257823';
-            const ytnotif = message.guild.roles.cache.find(role => role.name === "YouTube");
+            const channel = '807308134259490847';
+            const ytnotif = message.guild.roles.cache.find(role => role.name === "Youtube");
             const twnotif = message.guild.roles.cache.find(role => role.name === "Twitch");
-            const twtnotif = message.guild.roles.cache.find(role => role.name === "Twitter");
 
             const ytnotifEmoji = '🔴';
             const twnotifEmoji = '🟣';
-            const twtnotifEmoji = '🔵';
 
             let embed = new Discord.MessageEmbed()
             .setColor('#e42643')
@@ -27,7 +25,6 @@ module.exports = {
             let messageEmbed = await message.channel.send(embed);
             messageEmbed.react(ytnotifEmoji);
             messageEmbed.react(twnotifEmoji);
-            messageEmbed.react(twtnotifEmoji);
 
             client.on('messageReactionAdd', async (reaction, user) => {
                 if (reaction.message.partial) await reaction.message.fetch();
@@ -40,8 +37,6 @@ module.exports = {
                         await reaction.message.guild.members.cache.get(user.id).roles.add(ytnotif);
                     }if (reaction.emoji.name === twnotifEmoji) {
                         await reaction.message.guild.members.cache.get(user.id).roles.add(twnotif);
-                    }if (reaction.emoji.name === twtnotifEmoji) {
-                        await reaction.message.guild.members.cache.get(user.id).roles.add(twtnotif);
                     }
                 } else {
                     return;
@@ -59,8 +54,6 @@ module.exports = {
                         await reaction.message.guild.members.cache.get(user.id).roles.remove(ytnotif);
                     }if (reaction.emoji.name === twnotifEmoji) {
                         await reaction.message.guild.members.cache.get(user.id).roles.remove(twnotif);
-                    }if (reaction.emoji.name === twtnotifEmoji) {
-                        await reaction.message.guild.members.cache.get(user.id).roles.remove(twtnotif);
                     }
                 } else {
                     return;
