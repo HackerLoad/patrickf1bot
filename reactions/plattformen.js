@@ -5,7 +5,7 @@ module.exports = {
         if(message.member.permissions.has("ADMINISTRATOR")) {
             const channel = '877747408740691998';
             const teampc = message.guild.roles.cache.find(role => role.name === "PC");
-            const teamps = message.guild.roles.cache.find(role => role.name === "Playstation");
+            const teamps = message.guild.roles.cache.find(role => role.name === "PlayStation");
             const teamxbox = message.guild.roles.cache.find(role => role.name === "XBOX");
 
             const teampcEmoji = '⚪';

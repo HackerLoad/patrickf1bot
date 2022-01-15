@@ -2,7 +2,7 @@ module.exports = {
     name: 'clear',
     description: "Dieser Command löscht eine beschtimmte anzahl von Nachrichten.",
     async execute (message, args) {
-        if(message.member.permissions.has("KICK_MEMBERS")) {
+        if(message.member.permissions.has("MANAGE_MESSAGES")) {
 
             if (!args[0]) return message.reply("Bitte gib die Anzahl wieviele Nachrichten ich löschen soll!");
         

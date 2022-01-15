@@ -15,7 +15,7 @@ module.exports = {
             { name: 'Autor', value: 'Der Autor dieses Bots ist HackerLoad' },
             { name: 'Was kann der Bot?', value: 'Der Bot hilft bei der Moderation und ist für das Wohlbefinden des Servers da!' }
         )
-        .setFooter('Das Serverteam', 'https://i.imgur.com/lIhUgVv.png');
+        .setFooter('©HackerLoad', 'https://imgur.com/i0GTz5e.png');
         
         let messageEmbed = await message.channel.send(embed);
 

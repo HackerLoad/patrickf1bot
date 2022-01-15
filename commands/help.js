@@ -16,11 +16,9 @@ module.exports = {
             { name: '!twitch', value: 'Schickt einen Link zum Twitch-Kanal von Patrick.' },
             { name: '!instagram', value: 'Schickt einen Link zum Instagram Profil von Patrick.' },
             { name: '!twitter', value: 'Schickt einen Link zum Twitter von Patrick.' },
-            { name: '!lenkrad', value: 'Schickt den Namen und einen Link zum Lenkrad das Patrick zurzeit nutzt.' },
-            { name: '!wheels', value: 'Zeigt alle Lenkräder die Patrick empfiehlt/benutzt hatte.' },
             { name: '!discord', value: 'Schickt einen Einladungslink zum Discord!' }
         )
-        .setFooter('Das Serverteam', 'https://i.imgur.com/lIhUgVv.png');
+        .setFooter('©HackerLoad', 'https://imgur.com/i0GTz5e.png');
         
         let messageEmbed = await message.channel.send(embed);
 

@@ -20,8 +20,7 @@ module.exports = {
             .setDescription('Wenn du mit folgenden Emojis reagierst wirst du benachrichtigt falls Patrick etwas auf denen Postet/Hochlädt.')
             .addFields(
                 { name: 'YouTube', value: 'Wenn du mit 🔴 reagierst wirst du benachrichtigt, falls Patrick auf YouTube live gegangen ist oder wenn er etwas hochgeladen hat.'},
-                { name: 'Twitch', value: 'Wenn du mit 🟣 reagierst wirst du benachrichtigt, falls Patrick auf Twitch live gegangen ist.'},
-                { name: 'Twitter', value: 'Wenn du mit 🔵 reagierst wirst du benachrichtigt, falls Patrick etwas auf Twitter getweeted hat.'}
+                { name: 'Twitch', value: 'Wenn du mit 🟣 reagierst wirst du benachrichtigt, falls Patrick auf Twitch live gegangen ist.'}
             )
             .setFooter('©HackerLoad', 'https://imgur.com/i0GTz5e.png');
             

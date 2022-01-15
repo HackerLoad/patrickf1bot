@@ -1,18 +1,18 @@
 module.exports = {
-    name: 'twitch',
-    description: "Sendet ein Embed wo man das Twitch Kanal von Patrick findet.",
+    name: 'discord',
+    description: "Sendet ein Embed wo man einen Discord Einladungslink zum patrickf1gaming Community Server findet.",
     async execute(message, args, Discord, client) {
 
         const channel = '931862532455555182';
 
         let embed = new Discord.MessageEmbed()
-        .setColor('#8c03fc')
-        .setTitle('Twitch Kanal von patrickf1gaming')
+        .setColor('#0388fc')
+        .setTitle('Discord Einladungslink zum patrickf1gaming Community Server')
         .setAuthor('patrickf1bot', 'https://i.imgur.com/lIhUgVv.png')
-        .setDescription('Hier ist ein Link zum Twitch Kanal von patrickf1gaming!')
+        .setDescription('Hier ist ein Einladungslink zum Discord von patrickf1gaming!')
         .setThumbnail('https://i.imgur.com/lIhUgVv.png')
         .addFields(
-            { name: "Link:", value: "https://www.twitch.tv/patrickf1gaming"}    
+            { name: "Link:", value: "https://discord.gg/ua4yEkkNqT"}    
         )
         .setFooter('©HackerLoad', 'https://imgur.com/i0GTz5e.png');
 

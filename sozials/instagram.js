@@ -1,8 +1,24 @@
 module.exports = {
     name: 'instagram',
-    description: "When someone types the command a link to the Instagram account will be sent!",
-    execute(message, args) {
-        message.channel.send('Hier ist der Instagram Kanal von Patrick!');
-        message.channel.send('https://www.instagram.com/patrickf1gaming/');
+    description: "Sendet ein Embed wo man das Instagramm-Profil von Patrick findet.",
+    async execute(message, args, Discord, client) {
+
+        const channel = '931862532455555182';
+
+        let embed = new Discord.MessageEmbed()
+        .setColor('#fc037f')
+        .setTitle('Instagramm Profil von patrickf1gaming')
+        .setAuthor('patrickf1bot', 'https://i.imgur.com/lIhUgVv.png')
+        .setDescription('Hier ist ein Link zum Instagramm Profil von patrickf1gaming!')
+        .setThumbnail('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/800px-Instagram_logo_2016.svg.png')
+        .addFields(
+            { name: "Link:", value: "https://www.instagram.com/patrickf1gaming"}    
+        )
+        .setFooter('©HackerLoad', 'https://imgur.com/i0GTz5e.png');
+
+        await message.channel.send(embed);
+
+
     }
-}
+ 
+}   
